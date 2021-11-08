@@ -152,15 +152,17 @@ public class Sim extends CordovaPlugin {
       String simSerialNumber = null;
       String subscriberId = null;
 
+      Integer networkType = null;
+
       int callState = manager.getCallState();
       int dataActivity = manager.getDataActivity();
-      int networkType = manager.getNetworkType();
       int phoneType = manager.getPhoneType();
       int simState = manager.getSimState();
 
       boolean isNetworkRoaming = manager.isNetworkRoaming();
 
       if (simPermissionGranted(Manifest.permission.READ_PHONE_STATE)) {
+        networkType = manager.getDataNetworkType();
         phoneNumber = manager.getLine1Number();
         deviceId = manager.getDeviceId();
         deviceSoftwareVersion = manager.getDeviceSoftwareVersion();
