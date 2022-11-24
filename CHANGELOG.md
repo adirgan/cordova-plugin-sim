@@ -1,5 +1,8 @@
 # Changelog
 
+## v1.3.4
+- manager.getCallState(); moved under READ_PHONE_STATE permission
+
 ## v1.3.3
 
 - Android: Adjust required API levels
