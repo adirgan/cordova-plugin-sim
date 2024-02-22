@@ -44,9 +44,12 @@ public class Sim extends CordovaPlugin {
   private static final String HAS_READ_PERMISSION = "hasReadPermission";
   private static final String REQUEST_READ_PERMISSION = "requestReadPermission";
 
+  private CallbackContext callback;
+
   @SuppressLint("HardwareIds")
   @Override
   public boolean execute(String action, JSONArray args, CallbackContext callbackContext) {
+    callback = callbackContext;
     if (GET_SIM_INFO.equals(action)) {
       try {
         getSimInfo(callbackContext);
