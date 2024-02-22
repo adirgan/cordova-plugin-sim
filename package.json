@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/pbakondy/cordova-plugin-sim.git"
+    "url": "https://github.com/adirgan/cordova-plugin-sim.git"
   },
   "keywords": [
     "cordova",
@@ -36,10 +36,10 @@
       "version": ">=3.0.0"
     }
   ],
-  "author": "Peter Bakondy",
+  "author": "Peter Bakondy, Alejandro Dirgan",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pbakondy/cordova-plugin-sim/issues"
+    "url": "https://github.com/adirgan/cordova-plugin-sim/issues"
   },
-  "homepage": "https://github.com/pbakondy/cordova-plugin-sim#readme"
+  "homepage": "https://github.com/adirgan/cordova-plugin-sim#readme"
 }
